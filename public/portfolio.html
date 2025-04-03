@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Arjun.S</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+            color: #2c3e50;
+        }
+        .portfolio-page {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 60px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            display: inline-block;
+            margin: 15px;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .projects-section, .skills-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: #ecf0f1;
+            border-radius: 12px;
+            width: 320px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .tech-tag {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        .skill-item {
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .skill-bar {
+            background: #dcdde1;
+            height: 12px;
+            border-radius: 6px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .skill-progress {
+            height: 12px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-page">
+        <section class="hero-section">
+            <h1>Hi, I'm Arjun.S</h1>
+            <h1>23BCE0215</h1>
+            <h2>Frontend Developer</h2>
+            <p>Creating beautiful, functional web experiences with cutting-edge technologies</p>
+            <a href="#projects" class="button">View My Work</a>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="apple-clone-screenshot.jpg" alt="Apple Store Clone">
+                    </div>
+                    <h3>Apple Store Clone</h3>
+                    <p>A fully responsive e-commerce website mimicking Apple's official store.</p>
+                    <div class="tech-tag">React</div>
+                    <div class="tech-tag">React Router</div>
+                    <div class="tech-tag">CSS3</div>
+                    <div class="tech-tag">JavaScript</div>
+                    <div>
+                        <a href="#" class="button">Live Demo</a>
+                        <a href="#" class="button">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skill-item">React
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">JavaScript
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">CSS/Sass
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item">Node.js
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-item">UI/UX Design
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
